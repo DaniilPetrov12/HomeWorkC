@@ -2,25 +2,19 @@
 
 // 5 -> 2, 4
 // 8 -> 2, 4, 6, 8
-// Console.Write("Введите число a = ");
-// int number = Convert.ToInt32(Console.ReadLine());
-// int index = 0;
-// int lin = 0;
-// while(index<=number)
-// {
-//     Console.WriteLine( + 2);
-//     index++;
-// }
-Console.WriteLine("Введите число: ");
-int N = Convert.ToInt32(Console.ReadLine());
-int count = 1;
 
-while(count <= N){
-    if(count % 2 == 0 ){
-        Console.Write($"{count},");
-        count++;
+Console.Write("Введите число a = ");
+int number = Convert.ToInt32(Console.ReadLine());
+int index = 1;
+
+while(index<=number){
+    if (index % 2 == 0)
+    {
+        Console.WriteLine($"Чётное число = {index}; ");
+        index++;
     }
     else{
-        count++;
+        index++;
     }
 }
+
